@@ -1,5 +1,6 @@
-#include <stdio.h>
-typedef char* String;
+#include <iostream>
+#include <string>
+typedef std::string String;
 
 #define VIRTUAL // virtual  // no matter we use virtual inheritance or not, it's problematic
 
@@ -16,7 +17,7 @@ class Student : public VIRTUAL Person {
  public:
   virtual String dorm() {return _addr;}  // assign dorm semantics to _addr
   void takeRest() {
-    printf("%s takeRest in the %s\n", name(), dorm());
+    std::cout << name() << " takeRest in the " << dorm() << std::endl;
   }
 };
 
@@ -24,7 +25,7 @@ class Faculty : public VIRTUAL Person {
  public:
   virtual String lab() {return _addr;}  // assign lab semantics to _addr
   void doBenchwork() {
-    printf("%s doBenchwork in the %s\n", name(), lab());
+    std::cout << name() << " doBenchwork in the " << lab() << std::endl;
   }
 };
 
@@ -33,8 +34,8 @@ class ResearchAssistant : public VIRTUAL Student, public VIRTUAL Faculty {
 
 
 int main() {
-  printf("sizeof(Person)  = %ld\n", sizeof(Person));
-  printf("sizeof(Student) = %ld\n", sizeof(Student));
-  printf("sizeof(Faculty) = %ld\n", sizeof(Faculty));
-  printf("sizeof(ResearchAssistant) = %ld\n", sizeof(ResearchAssistant));
+  std::cout << "sizeof(Person)  = " << sizeof(Person)  << std::endl;
+  std::cout << "sizeof(Student) = " << sizeof(Student) << std::endl;
+  std::cout << "sizeof(Faculty) = " << sizeof(Faculty) << std::endl;
+  std::cout << "sizeof(ResearchAssistant) = " << sizeof(ResearchAssistant) << std::endl;
 }

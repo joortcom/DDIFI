@@ -11,4 +11,3 @@ int get_week_day() {
      int weekday_index = wd.c_encoding();
      return weekday_index;
 }
-

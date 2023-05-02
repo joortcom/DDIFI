@@ -1,10 +1,11 @@
-#include <stdio.h>
-typedef char* String;
+#include <iostream>
+#include <string>
+typedef std::string String;
 
-char NAME[] = "ResAssis";
-char HOME[] = "home";
-char DORM[] = "dorm";
-char  LAB[] = "lab";
+String NAME = "ResAssis";
+String HOME = "home";
+String DORM = "dorm";
+String  LAB = "lab";
 
 #include "person.h"
 #include "student.h"

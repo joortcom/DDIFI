@@ -4,7 +4,7 @@ class Student : public Person {
 
   // regular methods' implementation
   void takeRest() {
-    printf("%s takeRest in the %s\n", name(), dorm());
+    std::cout << name() << " takeRest in the " << dorm() << std::endl;
   }
 };
 

@@ -4,7 +4,7 @@ class Faculty : public Person {
 
   // regular methods' implementation
   void doBenchwork() {
-    printf("%s doBenchwork in the %s\n", name(), lab());
+    std::cout << name() << " doBenchwork in the " << lab() << std::endl;
   }
 };
 
