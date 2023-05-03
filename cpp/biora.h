@@ -1,7 +1,7 @@
 #include "util.h"
 
-char  LAB_A[] = "labA";
-char  LAB_B[] = "labB";
+String LAB_A = "labA";
+String LAB_B = "labB";
 
 class BioResearchAssistantImpl : public ResearchAssistant {  // only inherit from ResearchAssistant interface
  protected:
