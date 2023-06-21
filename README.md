@@ -11,12 +11,14 @@ achieve multiple inheritance in C++, which can handle class fields of the diamon
 according to the programmers’ intended application semantics. It gives programmers flexibility when
 dealing with the diamond problem for instance variables: each instance variable can be configured
 either as one joined copy or as multiple independent copies in the bottom class. The key ideas are:
-1) decouple data interface from data implementation; 2) in the regular methods implementation
-use virtual property methods instead of direct raw fields; and 3) after each semantic branching add
-(and override) the new semantic assigning property. Then we show our method is general enough,
+1) decouple data interface from data implementation;
+2) in the regular methods implementation
+use virtual property methods instead of direct raw fields; and
+3) after each semantic branching add (and override) the new semantic assigning property.
+Then we show our method is general enough,
 and also applicable to any OOP languages that natively support multiple inheritance (e.g. C++,
 Python, Eiffel, etc.), or single inheritance languages that support default interface methods (e.g.
-Java, C# etc.).
+Java, C# etc.), or single inheritance languages that support mixin (e.g. D).
 
 Keywords: multiple inheritance, diamond problem, program to interfaces,
 virtual property, data interface, data implementation, semantic branching site, reusability, modularity
