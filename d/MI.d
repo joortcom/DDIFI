@@ -8,6 +8,7 @@ interface Person {
   public string name();  // abstract property method, to be implemented
   public string addr();  // abstract property method, to be implemented
   // no actual field
+  // can contain regular methods
 }
 
 class PersonImpl : Person {
@@ -26,8 +27,8 @@ interface Faculty : Person {
 }
 
 // meant to be code-reused by both FacultyImpl and ResearchAssistantImpl
-mixin template FacultyM(bool overrideProperty) {
- static if (overrideProperty) {
+mixin template FacultyM(bool withOverriddenProperty) {
+ static if (withOverriddenProperty) {
   override string lab() {return addr();}  // new semantic assigning property
  }
 
@@ -49,8 +50,8 @@ interface Student : Person {
 }
 
 // meant to be code-reused by both StudentImpl and ResearchAssistantImpl
-mixin template StudentM(bool overrideProperty) {
- static if (overrideProperty) {
+mixin template StudentM(bool withOverriddenProperty) {
+ static if (withOverriddenProperty) {
   override string dorm() {return addr();}  // new semantic assigning property
  }
 
@@ -86,8 +87,9 @@ class ResearchAssistantImpl : ResearchAssistant {
     _student_addr = "dorm";
   }
 
-  mixin FacultyM!(false);  // set overrideProperty=false, because we will override here in this impl!
-  mixin StudentM!(false);  // set overrideProperty=false, because we will override here in this impl!
+  // implementation code reuse!
+  mixin FacultyM!(false);  // set withOverriddenProperty=false, because we will override here in this impl!
+  mixin StudentM!(false);  // set withOverriddenProperty=false, because we will override here in this impl!
 
   // property methods
   override public string name() { return _name; }
