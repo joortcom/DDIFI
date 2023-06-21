@@ -1,13 +1,15 @@
-class Person {  // define abstract property, as Person's (data) interface
+// define abstract property, as Person's data-interface
+class Person {
  public:
   virtual String name() = 0;  // C++ abstract method
   virtual String addr() = 0;  // C++ abstract method
 
-  // all_regular_methods()
+  // all_public_or_protected_regular_methods() are defined in the data-interface
+  // to be inherited and reused
 };
 
-
-class PersonImpl : Person {  // define fields and property method, as Person's (data) implementation
+// define fields and property method, as Person's data-implementation
+class PersonImpl : Person {
  protected:
   String _name;
   String _addr;
