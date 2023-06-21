@@ -28,7 +28,7 @@ interface Faculty : Person {
 }
 
 class FacultyImpl : PersonImpl, Faculty {
-  // nothing new needed, so just extends PersonImpl
+  // nothing new needed, so just reuse PersonImpl
 }
 
 /* ------------------------------------------------------------------------- *\
@@ -43,7 +43,7 @@ interface Student : Person {
 }
 
 class StudentImpl : PersonImpl, Student {
-  // nothing new needed, so just extends PersonImpl
+  // nothing new needed, so just reuse PersonImpl
 }
 
 /* ------------------------------------------------------------------------- *\

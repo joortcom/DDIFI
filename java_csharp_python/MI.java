@@ -26,7 +26,7 @@ interface Faculty extends Person {
 }
 
 class FacultyImpl extends PersonImpl implements Faculty {
-  // nothing new needed, so just extends PersonImpl
+  // nothing new needed, so just reuse PersonImpl
 }
 
 /* ------------------------------------------------------------------------- *\
@@ -41,7 +41,7 @@ interface Student extends Person {
 }
 
 class StudentImpl extends PersonImpl implements Student {
-  // nothing new needed, so just extends PersonImpl
+  // nothing new needed, so just reuse PersonImpl
 }
 
 /* ------------------------------------------------------------------------- *\

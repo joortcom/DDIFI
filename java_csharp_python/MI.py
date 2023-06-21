@@ -36,7 +36,7 @@ class Faculty(Person):
 
 
 class FacultyImpl(PersonImpl, Faculty):
-  # nothing new needed, so just: PersonImpl
+  # nothing new needed, so just reuse PersonImpl
   pass
 
 
@@ -51,7 +51,7 @@ class Student(Person):
 
 
 class StudentImpl(PersonImpl, Student):
-  # nothing new needed, so just: PersonImpl
+  # nothing new needed, so just reuse PersonImpl
   pass
 
 
