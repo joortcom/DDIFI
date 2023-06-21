@@ -1,5 +1,7 @@
 using System;
 
+/* ------------------------------------------------------------------------- *\
+\* ------------------------------------------------------------------------- */
 interface Person {
   public string name();  // abstract property method, to be implemented
   public string addr();  // abstract property method, to be implemented
@@ -14,6 +16,8 @@ class PersonImpl : Person {
   public string addr() { return _addr; }
 }
 
+/* ------------------------------------------------------------------------- *\
+\* ------------------------------------------------------------------------- */
 interface Faculty : Person {
   string lab() {return addr();}  // new semantic assigning property
 
@@ -27,6 +31,8 @@ class FacultyImpl : PersonImpl, Faculty {
   // nothing new needed, so just extends PersonImpl
 }
 
+/* ------------------------------------------------------------------------- *\
+\* ------------------------------------------------------------------------- */
 interface Student : Person {
   string dorm() {return addr();}  // new semantic assigning property
 
@@ -40,6 +46,8 @@ class StudentImpl : PersonImpl, Student {
   // nothing new needed, so just extends PersonImpl
 }
 
+/* ------------------------------------------------------------------------- *\
+\* ------------------------------------------------------------------------- */
 interface ResearchAssistant : Student, Faculty {
   // factory method
   public static ResearchAssistant make() {
@@ -68,6 +76,8 @@ class ResearchAssistantImpl : ResearchAssistant {
 }
 
 
+/* ------------------------------------------------------------------------- *\
+\* ------------------------------------------------------------------------- */
 public class MI {
   public static void Main(string[] args) {
     ResearchAssistant ra = ResearchAssistant.make();

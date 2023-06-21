@@ -1,5 +1,8 @@
+#!/usr/bin/env python
 import abc
 
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
 class Person:
   @abc.abstractmethod
   def name(self):  # abstract property method, to be implemented
@@ -22,6 +25,8 @@ class PersonImpl(Person):
   def addr(self): return self._addr;
 
 
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
 class Faculty(Person):
   def lab(self): return self.addr();  # new semantic assigning property
 
@@ -35,6 +40,8 @@ class FacultyImpl(PersonImpl, Faculty):
   pass
 
 
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
 class Student(Person):
   def dorm(self): return self.addr();  # new semantic assigning property
 
@@ -48,6 +55,8 @@ class StudentImpl(PersonImpl, Student):
   pass
 
 
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
 class ResearchAssistant(Student, Faculty):
   # factory method
   @staticmethod
@@ -70,6 +79,8 @@ class ResearchAssistantImpl(ResearchAssistant):
   def  lab(self): return self._faculty_addr;
 
 
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
 def main():
   ra:ResearchAssistant = ResearchAssistant.make();
   f:Faculty = ra;

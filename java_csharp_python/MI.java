@@ -1,3 +1,5 @@
+/* ------------------------------------------------------------------------- *\
+\* ------------------------------------------------------------------------- */
 interface Person {
   public String name();  // abstract property method, to be implemented
   public String addr();  // abstract property method, to be implemented
@@ -12,6 +14,8 @@ class PersonImpl implements Person {
   @Override public String addr() { return _addr; }
 }
 
+/* ------------------------------------------------------------------------- *\
+\* ------------------------------------------------------------------------- */
 interface Faculty extends Person {
   default String lab() {return addr();}  // new semantic assigning property
 
@@ -25,6 +29,8 @@ class FacultyImpl extends PersonImpl implements Faculty {
   // nothing new needed, so just extends PersonImpl
 }
 
+/* ------------------------------------------------------------------------- *\
+\* ------------------------------------------------------------------------- */
 interface Student extends Person {
   default String dorm() {return addr();}  // new semantic assigning property
 
@@ -38,6 +44,8 @@ class StudentImpl extends PersonImpl implements Student {
   // nothing new needed, so just extends PersonImpl
 }
 
+/* ------------------------------------------------------------------------- *\
+\* ------------------------------------------------------------------------- */
 interface ResearchAssistant extends Student, Faculty {
   // factory method
   static ResearchAssistant make() {
@@ -66,6 +74,8 @@ class ResearchAssistantImpl implements ResearchAssistant {
 }
 
 
+/* ------------------------------------------------------------------------- *\
+\* ------------------------------------------------------------------------- */
 public class MI {
   public static void main(String[] args) {
     ResearchAssistant ra = ResearchAssistant.make();
