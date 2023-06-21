@@ -2,6 +2,8 @@
 
 import std;
 
+/* ------------------------------------------------------------------------- *\
+\* ------------------------------------------------------------------------- */
 interface Person {
   public string name();  // abstract property method, to be implemented
   public string addr();  // abstract property method, to be implemented
@@ -16,11 +18,14 @@ class PersonImpl : Person {
   override public string addr() { return _addr; }
 }
 
+/* ------------------------------------------------------------------------- *\
+\* ------------------------------------------------------------------------- */
 interface Faculty : Person {
   string lab();        // new semantic assigning property
   void doBenchwork();  // regular methods
 }
 
+// meant to be code-reused by both FacultyImpl and ResearchAssistantImpl
 mixin template FacultyM(bool overrideProperty) {
  static if (overrideProperty) {
   override string lab() {return addr();}  // new semantic assigning property
@@ -36,11 +41,14 @@ class FacultyImpl : PersonImpl, Faculty {
   mixin FacultyM!(true);
 }
 
+/* ------------------------------------------------------------------------- *\
+\* ------------------------------------------------------------------------- */
 interface Student : Person {
   string dorm();    // new semantic assigning property
   void takeRest();  // regular methods
 }
 
+// meant to be code-reused by both StudentImpl and ResearchAssistantImpl
 mixin template StudentM(bool overrideProperty) {
  static if (overrideProperty) {
   override string dorm() {return addr();}  // new semantic assigning property
@@ -56,6 +64,8 @@ class StudentImpl : PersonImpl, Student {
   mixin StudentM!(true);
 }
 
+/* ------------------------------------------------------------------------- *\
+\* ------------------------------------------------------------------------- */
 interface ResearchAssistant : Student, Faculty {
   // factory method
   static ResearchAssistant make() {
@@ -91,6 +101,8 @@ class ResearchAssistantImpl : ResearchAssistant {
 }
 
 
+/* ------------------------------------------------------------------------- *\
+\* ------------------------------------------------------------------------- */
 void main() {
   ResearchAssistant ra = ResearchAssistant.make();
   Faculty f = ra;
