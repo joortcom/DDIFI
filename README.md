@@ -1,7 +1,7 @@
 # DDIFI
 A new design pattern DDIFI: Decoupling Data Interface From data Implementation as a clean and general solution to multiple inheritance
 
-Abstract:
+### Abstract:
 
 Traditionally in class based OOP languages, both the fields and methods from the super-classes are
 inherited by the sub-classes. However this may cause some serious problems in multiple inheritance,
@@ -20,5 +20,7 @@ and also applicable to any OOP languages that natively support multiple inherita
 Python, Eiffel, etc.), or single inheritance languages that support default interface methods (e.g.
 Java, C# etc.), or single inheritance languages that support mixin (e.g. D).
 
-Keywords: multiple inheritance, diamond problem, program to interfaces,
+### Keywords:
+
+multiple inheritance, diamond problem, program to interfaces,
 virtual property, data interface, data implementation, semantic branching site, reusability, modularity
