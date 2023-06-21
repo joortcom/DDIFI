@@ -10,7 +10,7 @@ as a clean and general solution to such problems. We first present a design patt
 achieve multiple inheritance in C++, which can handle class fields of the diamond problem exactly
 according to the programmers’ intended application semantics. It gives programmers flexibility when
 dealing with the diamond problem for instance variables: each instance variable can be configured
-either as one joined copy or as multiple independent copies in the bottom class. The key ideas are:
+either as one joined copy or as multiple independent copies in the implementation class. The key ideas are:
 1) decouple data interface from data implementation;
 2) in the regular methods implementation
 use virtual property methods instead of direct raw fields; and
