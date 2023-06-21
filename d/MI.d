@@ -91,7 +91,7 @@ class ResearchAssistantImpl : ResearchAssistant {
 
   // property methods
   override public string name() { return _name; }
-  override public string addr() { return dorm(); }  // here we choos to use dorm as addr
+  override public string addr() { return dorm(); }  // here we choose to use dorm as addr
   override public string dorm() { return _student_addr; }
   override public string  lab() { return _faculty_addr; }
 
