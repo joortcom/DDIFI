@@ -1,4 +1,4 @@
-class ResearchAssistant : public Student, public Faculty {  // inherit from both interface
+class ResearchAssistant : public Student, public Faculty {  // MI with regular-methods code reuse!
 };
 
 class ResearchAssistantImpl : public ResearchAssistant {  // only inherit from ResearchAssistant interface
