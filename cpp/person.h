@@ -1,14 +1,14 @@
-// define abstract property, as Person's data-interface
+// define abstract virtual property, in Person's data-interface
 class Person {
  public:
-  virtual String name() = 0;  // C++ abstract method
-  virtual String addr() = 0;  // C++ abstract method
+  virtual String name() = 0;  // C++ abstract virtual method
+  virtual String addr() = 0;  // C++ abstract virtual method
 
   // all_public_or_protected_regular_methods() are defined in the data-interface
-  // to be inherited and reused
+  // to be inherited and code-reused
 };
 
-// define fields and property method, as Person's data-implementation
+// define fields and property method, in Person's data-implementation
 class PersonImpl : Person {
  protected:
   String _name;
@@ -17,3 +17,4 @@ class PersonImpl : Person {
   virtual String addr() override { return _addr; }
   virtual String name() override { return _name; }
 };
+

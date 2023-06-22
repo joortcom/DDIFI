@@ -1,13 +1,18 @@
 class Faculty : public Person {
  public:
-  virtual String lab() {return addr();}  // new semantic assigning property
+  // add new semantic assigning virtual property
+  virtual String lab() {  // give it a new exact name matching its new semantics
+    return addr();         // but the implementation here can be just super's addr()
+  }
 
   // regular methods' implementation
   void doBenchwork() {
-    std::cout << name() << " doBenchwork in the " << lab() << std::endl;
+    cout << name() << " doBenchwork in the "
+         << lab()  // MUST use the new property, not the inherited addr() whose semantics has branched!
+         << endl;
   }
 };
 
 class FacultyImpl : public Faculty, PersonImpl {
-  // no new field
+  // no new field: be memory-wise efficient, while function-wise flexible
 };

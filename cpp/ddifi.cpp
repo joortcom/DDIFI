@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 typedef std::string String;
+using namespace std;
 
 String NAME = "ResAssis";
 String HOME = "home";
