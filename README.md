@@ -15,6 +15,7 @@ either as one joined copy or as multiple independent copies in the implementatio
 2) in the regular methods implementation
 use virtual property methods instead of direct raw fields; and
 3) after each semantic branching add (and override) the new semantic assigning property.
+
 Then we show our method is general enough,
 and also applicable to any OOP languages that natively support multiple inheritance (e.g. C++,
 Python, Eiffel, etc.), or single inheritance languages that support default interface methods (e.g.
