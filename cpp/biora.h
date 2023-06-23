@@ -5,7 +5,8 @@
 String LAB_A = "labA";
 String LAB_B = "labB";
 
-class BioResearchAssistantImpl : public ResearchAssistant {  // only inherit from ResearchAssistant interface
+// only inherit from ResearchAssistant, but not from any other xxxImpl class
+class BioResearchAssistantImpl : public ResearchAssistant {
  protected:
   // define two fields: NOTE: totally independent to those fields in PersonImpl, StudentImpl, and FacultyImpl
   String _name;
