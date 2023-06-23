@@ -1,3 +1,5 @@
+// Disclosure: This work is patent pending, as already stated in the https://github.com/joortcom/DDIFI/blob/main/ddifi.pdf.
+
 class Student : public Person {
  public:
   // add new semantic assigning virtual property
