@@ -1,12 +1,15 @@
 # DDIFI
-A new design pattern DDIFI: Decoupling Data Interface From data Implementation as a clean and general solution to multiple inheritance
+A new design pattern DDIFI: Decoupling Data Interface From data Implementation
+as a **clean** and **general** solution to multiple inheritance (e.g. the diamond problem).
 
 ### Abstract:
 
 Traditionally in class based OOP languages, both the fields and methods from the super-classes are
 inherited by the sub-classes. However this may cause some serious problems in multiple inheritance,
 e.g. most notably the diamond problem. In this paper, we propose to stop inheriting data fields
-as a clean and general solution to such problems. We first present a design pattern to cleanly
+as a clean and general solution to such problems.
+
+We first present a design pattern to cleanly
 achieve multiple inheritance in C++, which can handle class fields of the diamond problem exactly
 according to the programmers’ intended application semantics. It gives programmers flexibility when
 dealing with the diamond problem for instance variables: each instance variable can be configured
