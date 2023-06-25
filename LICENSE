@@ -2,25 +2,28 @@ JoorT.com License
 
 DDIFI is licensed under the the JoorT.com commercial license.
 
-If your company has a gross revenue of less than one (1) million U.S. dollars
-($1,000,000.00 USD) per year and have less than ten (10) developers in your organization,
-you can use DDIFI free of charge.
+1) You can use DDIFI in any open source project.
 
-If your company has a gross revenue of greater than one (1) million U.S. dollars
-($1,000,000.00 USD) per year or have more than ten (10) developers in your organization,
-for every one (1) million U.S. dollars ($1,000,000.00 USD) annual revenue, you pay
-JoorT.com ten (10) U.S. dollars ($10.00 USD) annually, i.e:
-annual license fee = (prevous year's annual revenue) / 100,000.
+2) If your company has a gross revenue of less than one (1) million U.S. dollars
+($1,000,000.00 USD) per year and have less than ten (10) developers in your
+organization, you can use DDIFI free of charge.
 
-In either one of the above cases, you are subject to the following conditions:
+3) If your company has a gross revenue of greater than one (1) million U.S.
+dollars ($1,000,000.00 USD) per year or have more than ten (10) developers in
+your organization, for every one (1) million U.S. dollars ($1,000,000.00 USD)
+annual revenue, you pay JoorT.com ten (10) U.S. dollars ($10.00 USD) annually,
+i.e: annual license fee = (prevous year's annual revenue) / 100,000.
 
-1) You company must acknowledge the use of DDIFI in your company's products' release document
-AND source code comments where DDIFI are applied,
+In any one of the above cases, you are subject to the following conditions:
 
-2) THE DESIGN PATTERN IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+1) You (company) must acknowledge the use of DDIFI in your company's products'
+release document AND source code comments where DDIFI are applied, by refering
+to this git repo: https://github.com/joortcom/DDIFI.
+
+2) THE DESIGN PATTERN IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE DESIGN PATTERN OR THE USE OR OTHER DEALINGS IN THE
-DESIGN PATTERN.
+OUT OF OR IN CONNECTION WITH THE DESIGN PATTERN OR THE USE OR OTHER DEALINGS IN
+THE DESIGN PATTERN.
