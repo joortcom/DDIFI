@@ -9,7 +9,7 @@ inherited by the sub-classes. However this may cause some serious problems in mu
 e.g. most notably the diamond problem. In this paper, we propose to stop inheriting data fields
 as a clean and general solution to such problems.
 
-We first present a design pattern to cleanly
+We first present a design pattern to **cleanly**
 achieve multiple inheritance in C++, which can handle class fields of the diamond problem exactly
 according to the programmers’ intended application semantics. It gives programmers flexibility when
 dealing with the diamond problem for instance variables: each instance variable can be configured
@@ -19,7 +19,7 @@ either as one joined copy or as multiple independent copies in the implementatio
 use virtual property methods instead of direct raw fields; and
 3) after each semantic branching add (and override) the new semantic assigning property.
 
-Then we show our method is general enough,
+Then we show our method is **general** enough,
 and also applicable to any OOP languages that natively support multiple inheritance (e.g. C++,
 Python, Eiffel, etc.), or single inheritance languages that support default interface methods (e.g.
 Java, C# etc.), or single inheritance languages that support mixin (e.g. D).
