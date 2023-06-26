@@ -1,0 +1,3 @@
+
+run:
+	ocaml mi.ml
