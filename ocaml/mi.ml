@@ -11,8 +11,8 @@ class virtual person =
 class person_impl =
   object (self)
     (* only define fields and property methods in data implementation class *)
-    val mutable _name = "name"
-    val mutable _addr = "addr"
+    val mutable _name : string = "name"
+    val mutable _addr : string = "addr"
     method name() = _name
     method addr() = _addr
   end
@@ -70,9 +70,9 @@ class research_assistant_impl =
     inherit research_assistant      (* only inherit the data-interface *)
 
     (* define three fields: NOTE: totally independent to those fields in PersonImpl, StudentImpl, and FacultyImpl *)
-    val mutable _name = "ResAssis"
-    val mutable _faculty_addr = "lab"
-    val mutable _student_addr = "dorm"
+    val mutable _name : string = "ResAssis"
+    val mutable _faculty_addr : string = "lab"
+    val mutable _student_addr : string = "dorm"
 
     (* property methods *)
     method name() = _name
