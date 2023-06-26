@@ -10,6 +10,7 @@ class virtual person =
 
 class person_impl =
   object (self)
+    inherit person
     (* only define fields and property methods in data implementation class *)
     val mutable _name : string = "name"
     val mutable _addr : string = "addr"
