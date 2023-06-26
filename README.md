@@ -21,7 +21,7 @@ use virtual property methods instead of direct raw fields; and
 
 Then we show our method is **general** enough,
 and also applicable to any OOP languages that natively support multiple inheritance (e.g. C++,
-Python, Eiffel, etc.), or single inheritance languages that support default interface methods (e.g.
+Python, OCaml, Eiffel, etc.), or single inheritance languages that support default interface methods (e.g.
 Java, C# etc.), or single inheritance languages that support mixin (e.g. D).
 
 ### Keywords:
