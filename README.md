@@ -20,9 +20,10 @@ use virtual property methods instead of direct raw fields; and
 3) after each semantic branching add (and override) the new semantic assigning property.
 
 Then we show our method is **general** enough,
-and also applicable to any OOP languages that natively support multiple inheritance (e.g. C++,
-Python, OCaml, Eiffel, etc.), or single inheritance languages that support default interface methods (e.g.
-Java, C# etc.), or single inheritance languages that support mixin (e.g. D).
+and also applicable to any OOP languages:
+1) that natively support multiple inheritance (e.g. C++, Python, OCaml, Eiffel, etc.), or
+2) single inheritance languages that support default interface methods (e.g. Java, C# etc.), or
+3) single inheritance languages that support mixin (e.g. D).
 
 ### Keywords:
 
