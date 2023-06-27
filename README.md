@@ -28,6 +28,13 @@ and also applicable to any OOP languages:
 3) single inheritance languages that support mixin (e.g. D).
 
 ### Demo:
+As an example, in the diamond inheritance problem of <Person, Student, Faculty, and ResearchAssistant>, 
+we want to achieve the ideal application semantics: each ResearchAssistant should only have 3 fields:
+* one (joined) copy of `_name` field, but
+* two (separated) different address fields:
+  ** one `_student_addr` ("dorm") as Student to takeRest(), and
+  ** one `_faculty_addr` ("lab") as Faculty to doBenchwork()
+
 DDIFI can achieve this ideal application semantics, which is not possible with C++'s plain MI:
 
 ![ideal application semantics](https://github.com/joortcom/DDIFI/blob/main/talk/diamond_univ.png)
