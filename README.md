@@ -1,6 +1,8 @@
 # DDIFI
-A new design pattern DDIFI: Decoupling Data Interface From data Implementation
-as a **clean** and **general** solution to multiple inheritance (e.g. the diamond problem).
+**The diamond problem solved**! Using virtual property to
+decouple the **data** dependency of the subclass on the
+superclass, as a **clean** and **general** solution to multiple
+inheritance
 
 ### Abstract:
 
