@@ -1,4 +1,4 @@
-# DDIFI
+# DDIFI: a new design pattern that solved the diamond problem of multiple inheritance
 **The diamond problem solved**! Using virtual property to
 decouple the **data** dependency of the subclass on the
 superclass, as a **clean** and **general** solution to multiple
@@ -25,7 +25,7 @@ Then we show our method is **general** enough,
 and also applicable to any OOP languages:
 1) that natively support multiple inheritance (e.g. C++, Python, OCaml, Eiffel, etc.), or
 2) single inheritance languages that support default interface methods (e.g. Java, C# etc.), or
-3) single inheritance languages that support mixin (e.g. D).
+3) single inheritance languages that support mixin, and conditional compilation (e.g. `static if` in D).
 
 ### Demo:
 As an example, in the diamond inheritance problem of <`Person, Student, Faculty, and ResearchAssistant`>, 
@@ -41,7 +41,7 @@ DDIFI can achieve this **ideal** application semantics, which is not possible wi
 
 ### Keywords:
 
-multiple inheritance, diamond problem, program to interfaces,
+multiple inheritance, diamond problem, program to (data-)interfaces,
 virtual property, data interface, data implementation, semantic branching site, reusability, modularity
 
 
