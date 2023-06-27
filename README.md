@@ -27,6 +27,11 @@ and also applicable to any OOP languages:
 2) single inheritance languages that support default interface methods (e.g. Java, C# etc.), or
 3) single inheritance languages that support mixin (e.g. D).
 
+### Demo:
+DDIFI can achieve this application semantics, which is not possible with C++'s plain MI:
+
+https://github.com/joortcom/DDIFI/blob/main/talk/diamond_univ.png
+
 ### Keywords:
 
 multiple inheritance, diamond problem, program to interfaces,
