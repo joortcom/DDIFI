@@ -6,18 +6,21 @@ create {ANY}
    make
 
 feature {ANY}
+   -- define three fields: NOTE: totally independent to those fields in PersonImpl, StudentImpl, and FacultyImpl
+   name_: STRING
    student_addr_ : STRING
    faculty_addr_ : STRING
-   name_: STRING
 
    get_name():STRING  is do Result := name_ end
    set_name(n:STRING) is do name_ := n end
 
+   -- property methods
    get_student_addr():STRING  is do Result := student_addr_ end  -- override
    get_faculty_addr():STRING  is do Result := faculty_addr_ end  -- override
    set_student_addr(a:STRING) is do student_addr_ := a end       -- override
    set_faculty_addr(a:STRING) is do faculty_addr_ := a end       -- override
 
+   -- constructor
    make is
      do
        name_ := "ResAssis"
