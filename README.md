@@ -41,7 +41,7 @@ DDIFI can achieve this **ideal** application semantics, which is not possible wi
 
 ### Keywords:
 
-multiple inheritance, diamond problem, program to interfaces,
+multiple inheritance, diamond problem, program to (data-)interfaces,
 virtual property, data interface, data implementation, semantic branching site, reusability, modularity
 
 
