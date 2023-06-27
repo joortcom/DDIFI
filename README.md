@@ -32,8 +32,8 @@ As an example, in the diamond inheritance problem of <Person, Student, Faculty, 
 we want to achieve the ideal application semantics: each ResearchAssistant should only have 3 fields:
 * one (joined) copy of `_name` field, but
 * two (separated) different address fields:
-  ** one `_student_addr` ("dorm") as Student to takeRest(), and
-  ** one `_faculty_addr` ("lab") as Faculty to doBenchwork()
+  * one `_student_addr` ("dorm") as Student to takeRest(), and
+  * one `_faculty_addr` ("lab") as Faculty to doBenchwork()
 
 DDIFI can achieve this ideal application semantics, which is not possible with C++'s plain MI:
 
