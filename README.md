@@ -28,7 +28,7 @@ and also applicable to any OOP languages:
 3) single inheritance languages that support mixin (e.g. D).
 
 ### Demo:
-As an example, in the diamond inheritance problem of <Person, Student, Faculty, and ResearchAssistant>, 
+As an example, in the diamond inheritance problem of <`Person, Student, Faculty, and ResearchAssistant`>, 
 we want to achieve the ideal application semantics: each ResearchAssistant should only have 3 fields:
 * one (joined) copy of `_name` field, but
 * two (separated) different address fields:
