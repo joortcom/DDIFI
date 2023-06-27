@@ -29,9 +29,9 @@ and also applicable to any OOP languages:
 
 ### Demo:
 As an example, in the diamond inheritance problem of <`Person, Student, Faculty, and ResearchAssistant`>, 
-we want to achieve the ideal application semantics: each ResearchAssistant should only have 3 fields:
-* one (joined) copy of `_name` field, but
-* two (separated) different address fields:
+we want to achieve the ideal application semantics: each ResearchAssistant should **only have 3 fields**:
+* **one joined** copy of `_name` field, but
+* **two separated** different address fields:
   * one `_student_addr` ("dorm") as Student to takeRest(), and
   * one `_faculty_addr` ("lab") as Faculty to doBenchwork()
 
