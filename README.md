@@ -25,7 +25,8 @@ Then we show our method is **general** enough,
 and also applicable to any OOP languages:
 1) that natively support multiple inheritance (e.g. C++, Python, OCaml, Lisp, Eiffel, etc.), or
 2) single inheritance languages that support default interface methods (e.g. Java, C# etc.), or
-3) single inheritance languages that support mixin, and conditional compilation (e.g. `static if` in D).
+3) single inheritance languages that support mixin, and conditional compilation (e.g. `static if` in D),
+or traits (e.g. Scala).
 
 ### Demo:
 As an example, in the diamond inheritance problem of <`Person, Student, Faculty, and ResearchAssistant`>, 
