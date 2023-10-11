@@ -40,6 +40,10 @@ DDIFI can achieve this **ideal** application semantics, which is not possible wi
 
 ![ideal application semantics](https://github.com/joortcom/DDIFI/blob/main/talk/diamond_univ.png)
 
+DDIFI design pattern:
+
+![ideal application semantics](https://github.com/joortcom/DDIFI/blob/main/talk/diamond_ddifi.png)
+
 ### Keywords:
 
 multiple inheritance, diamond problem, program to (data-)interfaces,
