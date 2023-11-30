@@ -55,6 +55,4 @@ virtual property, data interface, data implementation, semantic branching site, 
 This work is patent pending, as already stated in the https://github.com/joortcom/DDIFI/blob/main/ddifi.pdf.
 
 
-.. image:: https://user-images.githubusercontent.com/8982949/33011169-6da4af5e-cddd-11e7-94e5-a52d776b94ba.png
-        :target: https://www.paypal.me/DDIFI
-
+[<img src="https://user-images.githubusercontent.com/8982949/33011169-6da4af5e-cddd-11e7-94e5-a52d776b94ba.png">](https://www.paypal.me/DDIFI)
