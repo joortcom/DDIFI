@@ -44,6 +44,10 @@ DDIFI design pattern:
 
 ![ideal application semantics](https://github.com/joortcom/DDIFI/blob/main/talk/diamond_ddifi.png)
 
+or in 3D view:
+
+![ideal application semantics](https://github.com/joortcom/DDIFI/blob/main/talk/ddifi_3D.png)
+
 ### Keywords:
 
 multiple inheritance, diamond problem, program to (data-)interfaces,
