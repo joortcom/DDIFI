@@ -40,6 +40,14 @@ DDIFI can achieve this **ideal** application semantics, which is not possible wi
 
 ![ideal application semantics](https://github.com/joortcom/DDIFI/blob/main/talk/diamond_univ.png)
 
+DDIFI design pattern:
+
+![ideal application semantics](https://github.com/joortcom/DDIFI/blob/main/talk/diamond_ddifi.png)
+
+or in 3D view:
+
+![ideal application semantics](https://github.com/joortcom/DDIFI/blob/main/talk/ddifi_3D.png)
+
 ### Keywords:
 
 multiple inheritance, diamond problem, program to (data-)interfaces,
@@ -49,3 +57,6 @@ virtual property, data interface, data implementation, semantic branching site, 
 ### Disclosure:
 
 This work is patent pending, as already stated in the https://github.com/joortcom/DDIFI/blob/main/ddifi.pdf.
+
+
+[<img src="https://user-images.githubusercontent.com/8982949/33011169-6da4af5e-cddd-11e7-94e5-a52d776b94ba.png">](https://www.paypal.me/DDIFI)
