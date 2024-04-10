@@ -1,4 +1,4 @@
-# DDIFI: a new design pattern that solved the diamond problem of multiple inheritance
+# Stop inheriting data fields! DDIFI: a new design pattern that solved the diamond problem of multiple inheritance
 **The diamond problem solved**! Using virtual property to
 decouple the **data** dependency of the subclass on the
 superclass, as a **clean** and **general** solution to multiple
