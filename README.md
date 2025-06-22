@@ -4,6 +4,27 @@ decouple the **data** dependency of the subclass on the
 superclass, as a **clean** and **general** solution to multiple
 inheritance
 
+
+### An analogy:
+
+In object-oriented programming, data members within a class are like the wooden legs of a table.
+With the support of these table legs, various functionalities can be implemented on the tabletop,
+such as placing a flower vase. However, when multiple inheritance is required (which can be imagined
+as trying to combine many tables together to create a more complex and advanced table), these *rigid*
+table legs become difficult to manage: we may need to keep some legs separate while merging others
+into a single leg.
+
+![rigid table legs](https://github.com/joortcom/DDIFI/blob/main/table.png)
+
+The DDIFI design pattern is equivalent to replacing the rigid wooden table legs
+(i.e., concrete data members) with flexible "rope legs" (virtual fields, or abstract data members)
+in the table (class), thereby providing a clean and general solution to the diamond problem.
+
+As illustrated in following animation:
+
+![virtual legs](https://github.com/joortcom/DDIFI/blob/main/virtual_legs.gif)
+
+
 ### Abstract:
 
 Traditionally in class based OOP languages, both the fields and methods from the super-classes are
