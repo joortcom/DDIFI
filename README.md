@@ -14,7 +14,7 @@ as trying to combine many tables together to create a more complex and advanced 
 table legs become difficult to manage: we may need to keep some legs separate while merging others
 into a single leg.
 
-![rigid table legs](https://github.com/joortcom/DDIFI/blob/main/table.png)
+<img src="https://github.com/joortcom/DDIFI/blob/main/table.png" width="260" height="260">
 
 The DDIFI design pattern is equivalent to replacing the rigid wooden table legs
 (i.e., concrete data members) with flexible "rope legs" (virtual fields, or abstract data members)
